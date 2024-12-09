@@ -1,3 +1,3 @@
-FROM public.ecr.aws/docker/library/openjdk:22-ea-8-slim
+FROM eclipse-temurin:8-jre-jammy
 COPY ./build/libs/*.jar /home/app.jar
 CMD ["java","-jar","/home/app.jar"]
